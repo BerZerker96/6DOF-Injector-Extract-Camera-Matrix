@@ -103,8 +103,10 @@ static void doInject(HWND hwnd) {
     statusf(L"Injecting into %s [pid %lu] ...",pr.name.c_str(),pr.pid);
     std::wstring err;
     if (injectInto(pr.pid,dll,err)) {
-        statusf(L"OK - injected. Play ~20-30s, press END in-game for a report.");
-        statusf(L"Log: 6DOF-%s.log  (in this folder).", [&]{ std::wstring n=pr.name; size_t d=n.rfind(L'.'); if(d!=std::wstring::npos)n=n.substr(0,d); return n; }().c_str());
+        statusf(L"OK - injected. The probe AUTO-RUNS its discovery pipeline ~5s in.");
+        statusf(L"Be in normal gameplay (not a menu). WATCH THE SCREEN: a brief camera sweep = it found the real camera.");
+        statusf(L"Keys in-game: INSERT re-run | END report | HOME memory scan.");
+        statusf(L"Log: 6DOF-%s.log  (this folder) has the RECOMMENDED TARGET + pointer chain.", [&]{ std::wstring n=pr.name; size_t d=n.rfind(L'.'); if(d!=std::wstring::npos)n=n.substr(0,d); return n; }().c_str());
     } else statusf(L"FAILED: %s", err.c_str());
 }
 
