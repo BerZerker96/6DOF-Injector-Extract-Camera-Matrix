@@ -1,6 +1,5 @@
 
 <img width="1584" height="672" alt="Gemini_Generated_Image_uz342suz342suz34" src="https://github.com/user-attachments/assets/68adeea3-dc87-4f39-b7be-c5281702aa60" />
-# 6DOF Injector + Probe
 
 A standalone tool that finds a game's camera and prints a complete, copy-pasteable spec for
 building an OpenTrack 6DOF head-tracking mod. No game-specific setup.
