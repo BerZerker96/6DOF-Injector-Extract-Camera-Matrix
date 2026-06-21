@@ -12,7 +12,7 @@ building an OpenTrack 6DOF head-tracking mod. No game-specific setup.
 1. Run `6DOFInjectGUI.exe` (or the console `6DOFInject.exe`). Match the architecture to the game
    (use the 32-bit build for 32-bit games).
 2. Pick the running game from the list and inject. The probe DLL loads into it.
-3. Play for ~5 seconds. The probe auto-runs its full discovery pipeline and writes
+3. Play for ~20 seconds - 2 min . The probe auto-runs its full discovery pipeline and writes
    `6DOFProbe.log` next to the probe (and to the game folder).
 4. Read the log. The two blocks you want are **MOD BUILD SPEC** (the GPU camera picture) and
    **TURNKEY MOD SPEC** (the consolidated build sheet). Send me that log and I build the mod.
